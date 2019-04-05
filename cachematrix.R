@@ -8,7 +8,6 @@
 ## The first function ("makeCacheMatrix") creates a special "matrix".
 ## Stores the matrix created and caches its inverse.
 
-```
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(a) {
@@ -23,7 +22,7 @@ makeCacheMatrix <- function(x = matrix()) {
     setinverse = setinverse,
        getinverse = getinverse)
 }
-```
+
 
 ##----------------------------------------------------------------------
 
@@ -32,7 +31,6 @@ makeCacheMatrix <- function(x = matrix()) {
 ## that if the inverse has already been computed but the matrix has 
 ## not changed, then it should print the inverse from the cache
 
-```
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
   inv <- x$getinverse()
@@ -45,5 +43,4 @@ cacheSolve <- function(x, ...) {
   x$setinverse(inv)
   inv
 }
-```
 ##----------------------------------------------------------------------
