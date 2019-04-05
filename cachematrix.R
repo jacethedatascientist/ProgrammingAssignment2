@@ -23,7 +23,6 @@ makeCacheMatrix <- function(x = matrix()) {
        getinverse = getinverse)
 }
 
-
 ##----------------------------------------------------------------------
 
 ## The second function ("cacheSolve") computes the inverse of the 
